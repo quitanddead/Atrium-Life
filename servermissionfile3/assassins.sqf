@@ -1,0 +1,7 @@
+//Assassins
+assassins =
+[
+""
+];
+
+publicvariable "assassins";

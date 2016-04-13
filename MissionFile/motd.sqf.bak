@@ -1,0 +1,7 @@
+server globalchat "// Bienvenue sur le serveur Atrium";
+while {true} do {
+	server globalchat "|| atrium.lesboby.ca";
+	sleep (motdwaittime);
+	server globalchat "|| Bienvenue sur le serveur Atrium";
+	sleep (motdwaittime);
+};
