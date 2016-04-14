@@ -5,11 +5,11 @@ hint "Chargement 0%";
 //player groupChat "Loading";
 //Requests info from server in order to download stats
 [getPlayerUID player, getPlayerUID player, "moneyPlayer", "NUMBER"] call sendToServer;
-sleep 3;
+sleep 2;
 hint "Chargement 20%";
 //player groupChat "Loading. .";
 [getPlayerUID player, getPlayerUID player, "moneyAccount", "NUMBER"] call sendToServer;
-sleep 3;
+sleep 2;
 hint "Chargement 40%";
 //player groupChat "Loading. . .";
 if(playerSide == west) then
@@ -18,8 +18,9 @@ if(playerSide == west) then
 	[getPlayerUID player, getPlayerUID player, "MagazinesPlayerWest", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "LicensesWest", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "InventoryWest", "ARRAY"] call sendToServer;
+	[getPlayerUID player, getPlayerUID player, "savedVehiclesCop", "ARRAY"] call sendToServer;
 };
-sleep 3;
+sleep 2;
 hint "Chargement 60%";
 //player groupChat "Loading. . . .";
 if(playerSide == resistance) then
@@ -29,7 +30,7 @@ if(playerSide == resistance) then
 	[getPlayerUID player, getPlayerUID player, "LicensesRes", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "InventoryRes", "ARRAY"] call sendToServer;
 };
-sleep 3;
+sleep 2;
 hint "Chargement 80%";
 //player groupChat "Loading. . . . .";
 if(playerSide == civilian) then
@@ -42,13 +43,13 @@ if(playerSide == civilian) then
     [getPlayerUID player, getPlayerUID player, "privateStorageCiv", "ARRAY"] call sendToServer;
     [getPlayerUID player, getPlayerUID player, "MaxWeight", "NUMBER"] call sendToServer;
 };
-sleep 3;
+sleep 2;
 hint "Chargement 100%";
 //player groupChat "Loading. . . . . .";
 
 //===========================================================================
 
-sleep 3;
+sleep 2;
 //END
 statsLoaded = 1;
 statsAreLoadedForReal = true;
