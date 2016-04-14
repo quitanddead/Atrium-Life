@@ -5,6 +5,8 @@ player groupChat "You do not have any saved vehicles, currently!";
 _rtv = (INV_SavedVehLandCop select 0) call inv_getitemname;
 _rtv2 = (INV_SavedVehLandCop select 1) call inv_getitemname;
 _rtv3 = (INV_SavedVehLandCop select 2) call inv_getitemname;
+_rtv4 = (INV_SavedVehLandCop select 3) call inv_getitemname;
+_rtv5 = (INV_SavedVehLandCop select 4) call inv_getitemname;
 continue = false;
 vehicle2Spawn = test;
 
@@ -12,6 +14,8 @@ player removeAction action2225;
 reTrieve = player addaction [_rtv,"noscript.sqf",'continue = true; vehicle2Spawn = (INV_SavedVehLandCop select 0);',1,true,true,"",'player distance vsavesheriff < 5'];
 reTrieve1 = player addaction [_rtv2,"noscript.sqf",'continue = true; vehicle2Spawn = (INV_SavedVehLandCop select 1);',1,true,true,"",'player distance vsavesheriff < 5'];
 reTrieve2 = player addaction [_rtv3,"noscript.sqf",'continue = true; vehicle2Spawn = (INV_SavedVehLandCop select 2);',1,true,true,"",'player distance vsavesheriff < 5'];
+reTrieve3 = player addaction [_rtv4,"noscript.sqf",'continue = true; vehicle2Spawn = (INV_SavedVehLandCop select 3);',1,true,true,"",'player distance vsavesheriff < 5'];
+reTrieve4 = player addaction [_rtv5,"noscript.sqf",'continue = true; vehicle2Spawn = (INV_SavedVehLandCop select 4);',1,true,true,"",'player distance vsavesheriff < 5'];
 
 player groupChat "Select a vehicle from the scroll menu!";
 
@@ -20,6 +24,8 @@ waituntil {continue};
 player removeAction reTrieve;
 player removeAction reTrieve1;
 player removeAction reTrieve2;
+player removeAction reTrieve3;
+player removeAction reTrieve4;
 
 player groupChat "RETRIEVING VEHICLE IN 3...";
 sleep 1;
@@ -56,5 +62,5 @@ player groupChat format ["RETRIEVED %1",vehicle2spawn call inv_getitemname];
 sleep 3;
 continue = false;
 
-action2224 = player addaction ["Retrieve Saved Vehicle","retrievevehiclesheriff.sqf",[],1,false,true,"","player distance vsavesheriff <= 3"];
+action2225 = player addaction ["Retrieve Saved Vehicle","retrievevehiclesheriff.sqf",[],1,false,true,"","player distance vsavesheriff <= 3"];
 };

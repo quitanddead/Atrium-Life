@@ -2070,7 +2070,7 @@ INV_ItemShops = [
 [copk9cars,"K9 Unit Vehicles",dummyobj,ck9spawn,_k9cars,_k9cars,true],
 //[copair1,"Cop Jet Shop",copair1,copair1aspawn,_copjetshop,_copjetshop,true],
 
-[donatebuy,"Donators Shop",maindonateshop,maindonatespawn,_Donate,_Donate,true],
+//[donatebuy,"Donators Shop",maindonateshop,maindonatespawn,_Donate,_Donate,true],
 
 //[milp,"Rifle & Vehicle shop",milp,milps,_milpolice,_milpolice,true],
 //[milpb,"Boat shop",milpb,milpsb,_milpoliceb,_milpoliceb,true],

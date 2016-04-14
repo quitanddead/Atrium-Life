@@ -66,11 +66,12 @@ action47 = _role addaction ["Change taxes","maindialogs.sqf",["steuern"],1,false
 //======================================= CRIMELOG ====================================================
 action50 = _role addaction ["Crime Log","maindialogs.sqf",["coplog"],1,false,true,"","player distance rathaus <= 3"];
 //======================================= VEHICLE SAVE ====================================================
-action2221 = _role addaction ["Retrieve Saved Vehicle","retrievevehicle.sqf",[INV_SavedVehLand, vsave1, 3, vsavers1, 2221],1,false,true,"","player distance vsave1 <= 3"]; //north spawn
-//action2222 = _role addaction ["Retrieve Saved Vehicle","noscript.sqf",'[INV_SavedVehLand, carpark1, 25, carpark1, 2222] execVM "retrievevehicle.sqf";',1,false,true,"","player distance carpark1 <= 25"]; //carpark spawn
+action2221 = _role addaction ["Retrieve Saved Vehicle","retrievevehicle.sqf",[],1,false,true,"","player distance vsave1 <= 3"]; //north spawn
 action2222 = _role addaction ["Retrieve Saved Vehicle","retrievevehicle2.sqf",[],1,false,true,"","player distance carpark1 <= 25"]; //carpark spawn
+action2223 = _role addaction ["Retrieve Saved Vehicle","retrievevehicle3.sqf",[],1,false,true,"","player distance vsave_north <= 5"]; //north parking
 action225 = _role addaction ["[*SAVE VEHICLE*]","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);[_vcl, INV_SavedVehLand] execVM "saveVehicle.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_ServerVclArray and _vcl in INV_VehicleArray and _vcl distance vsave1 < 50'];
 action224 = _role addaction ["[*SAVE VEHICLE*]","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);[_vcl, INV_SavedVehLand] execVM "saveVehicle.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_ServerVclArray and _vcl in INV_VehicleArray and _vcl distance carpark1 < 25'];
+action227 = _role addaction ["[*SAVE VEHICLE*]","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);[_vcl, INV_SavedVehLand] execVM "saveVehicle.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_ServerVclArray and _vcl in INV_VehicleArray and _vcl distance vsave_north < 30'];
 //======================================================================================================
 //======================================== SLAVES =====================================================
 //action49 = _role addaction [format ["Buy Slave ($%1)", slave_cost],"slaves.sqf", ["slave"],1,false,true,"","player distance boatshop3 <= 5 and isciv"];
@@ -167,8 +168,8 @@ action121 = _role addaction ["Rob Bar","robbar.sqf",["bar3"],1,false,true,"","is
 //========================   unflip vehicle     ================================
 action122 = _role addaction ["Unflip vehicle","unflipvehicle.sqf",["unflip"],1,false,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_VehicleArray'];
 //======================================== Donate shop===================================================
-_num15 = (donatebuy call INV_getshopnum);
-actiondonate = _role addaction ["Donator Shop","shopdialogs.sqf",[_num15],1,false,true,"","player distance donatebuy <= 5"];
+//_num15 = (donatebuy call INV_getshopnum);
+//actiondonate = _role addaction ["Donator Shop","shopdialogs.sqf",[_num15],1,false,true,"","player distance donatebuy <= 5"];
 //========================================MAFIA==========================================================
 //actionmaf = _role addaction ["Get Job","noscript.sqf",'[] call getmafjob;',1,true,true,"",'player distance mafs < 10 and ("mafial" call INV_HasLicense) and !hasjob'];
 actionpmc = _role addaction ["Switch to PMC BODYGUARD","noscript.sqf",'["Soldier_Bodyguard_AA12_PMC"] call clothes;',1,true,true,"",'player distance pmc < 10 and ("pmcl" call INV_HasLicense)'];

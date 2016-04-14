@@ -18,7 +18,7 @@ _itemsellarray  = ((INV_ItemShops select INV_ActiveShopNumber) select 5);
 _CopOnlyShops = [vippolice,copair,copcar,copcar1,copbasic,coppatrol,copsheriff,copswat,copbasic2,copboatshop,tdoc,copk9cars,coptrafficcars,coptraffic,copvicecars,copswatcars,copsub,copair1,cgweapons,cgboatshop,cgairshop,cgairshop2,cgvehshop];
 _donoro = [VIP1,VIP2,terrorvip,vipterrorair,vipshop1,VIPcop];
 _VIPcop = [vippolice];
-_regdonate = [maindonateshop];
+//_regdonate = [maindonateshop];
 _supdonate = [superd];
 _milps = [milp,milpb];
 _pmcs = [pmc];
@@ -31,7 +31,7 @@ if (_shop in _CopOnlyShops) then {
     if (_PlayerTeam == "CIV") exitWith {player groupchat "Civilians may not use this shop"; closedialog 0};
     };
 if(_shop in _donoro and !((getPlayerUID player) in donatorlevel4)) exitwith {player groupchat "Get out of here, you're not a donator!"; closedialog 0};
-if(_shop in _regdonate and !((getPlayerUID player) in vipdonators)) exitwith {player groupchat "VIPs Only!"; closedialog 0};
+//if(_shop in _regdonate and !((getPlayerUID player) in vipdonators)) exitwith {player groupchat "VIPs Only!"; closedialog 0};
 if(_shop in _supdonate and !((getPlayerUID player) in superacc)) exitwith {player groupchat "Super VIPs Only!"; closedialog 0};
 if(_shop in _VIPcop and !((getPlayerUID player) in vipdonators) and (_PlayerTeam == "CIV")) exitwith {player groupchat "Get out of here, you're not a donator!"; closedialog 0};
 if(_shop in _pmcs and !((getPlayerUID player) in specarray)) exitwith {player groupchat "You are not PMC!"; closedialog 0};
