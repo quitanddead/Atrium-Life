@@ -16,6 +16,7 @@ while {true} do
 		[getPlayerUID player, getPlayerUID player, "MagazinesPlayerWest", magazines player] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "LicensesWest", INV_LizenzOwner] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "InventoryWest", INV_InventarArray] call fn_SaveToServer;
+		[getPlayerUID player, getPlayerUID player, "savedVehiclesCop", INV_SavedVehLandCop] call fn_SaveToServer;
 	};
 	if(playerSide == resistance) then
 	{

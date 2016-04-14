@@ -17,6 +17,7 @@ _loadFromDBClient =
 		if(_varName == 'MagazinesPlayerWest') then {{player addMagazine _x} forEach _varValue;};
 		if(_varName == 'LicensesWest') then {INV_LizenzOwner = _varValue;};
 		if(_varName == 'InventoryWest') then {INV_InventarArray = _varValue;};
+		if(_varName == 'savedVehiclesCop') then {INV_SavedVehLandCop = _varValue;};
 		};
 	if(playerSide == civilian) then
 	{
