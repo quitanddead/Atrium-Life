@@ -1006,7 +1006,7 @@ INV_AlleWaffenObjekte = [
 ["supgrade2",["Item", "carobjects"],["supgrade2", "Fuel Injection 2"], [20000, 20000], [10, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 2",localize "STRS_inv_item_supgrade_info", [["steel", 1],["ebauteile", 1],["plastic", 1],["plastic", 10]]],
 ["supgrade3",["Item", "carobjects"],["supgrade3", "Violator 3"], [30000, 30000], [5, "Donator_licence", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 3",localize "STRS_inv_item_supgrade_info", [["steel", 1],["ebauteile", 1],["plastic", 1],["plastic", 10]]],
 ["supgrade4",["Item", "carobjects"],["supgrade4", "Interceptor 4"], [50000, 50000], [10, "Donator_licence", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 4",localize "STRS_inv_item_supgrade_info", [["steel", 1],["ebauteile", 1],["plastic", 1],["plastic", 10]]],
-["supgrade5",["Item", "carobjects"],["supgrade5", "Fast And Furious 5"], [90000, 9000], [5, "Donator_licence", "Donator_licence"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["steel", 1],["ebauteile", 1],["plastic", 1],["plastic", 10]]],
+["supgrade5",["Item", "carobjects"],["supgrade5", "Fast And Furious 5"], [90000, 9000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["steel", 1],["ebauteile", 1],["plastic", 1],["plastic", 10]]],
 
 //============================END OF SPEED UPGRADE SHOP=============================
 

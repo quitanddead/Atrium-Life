@@ -19,6 +19,8 @@ if(playerSide == west) then
 	[getPlayerUID player, getPlayerUID player, "LicensesWest", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "InventoryWest", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "savedVehiclesCop", "ARRAY"] call sendToServer;
+	[getPlayerUID player, getPlayerUID player, "savedVehiclesBoatCop", "ARRAY"] call sendToServer;
+	[getPlayerUID player, getPlayerUID player, "savedAircraftCop", "ARRAY"] call sendToServer;
 };
 sleep 2;
 hint "Chargement 60%";
@@ -40,6 +42,8 @@ if(playerSide == civilian) then
 	[getPlayerUID player, getPlayerUID player, "LicensesCiv", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "InventoryCiv", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "savedVehiclesCiv", "ARRAY"] call sendToServer;
+	[getPlayerUID player, getPlayerUID player, "savedVehiclesBoatCiv", "ARRAY"] call sendToServer;
+	[getPlayerUID player, getPlayerUID player, "savedAircraftCiv", "ARRAY"] call sendToServer;
     [getPlayerUID player, getPlayerUID player, "privateStorageCiv", "ARRAY"] call sendToServer;
     [getPlayerUID player, getPlayerUID player, "MaxWeight", "NUMBER"] call sendToServer;
 };

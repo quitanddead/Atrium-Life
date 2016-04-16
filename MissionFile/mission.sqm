@@ -6051,7 +6051,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3917;
+		items=3932;
 		class Item0
 		{
 			position[]={15321.742,35.599998,16100.798};
@@ -44022,10 +44022,179 @@ class Mission
 			text="vsave_north_1";
 			init="this allowdamage false;this attachto [vsave_north, [0,0,1]];";
 		};
+		class Item3917
+		{
+			position[]={13992.5,57.961399,12216.1};
+			azimut=180;
+			id=1571;
+			side="EMPTY";
+			vehicle="tcg_atm";
+			leader=1;
+			skill=0.60000002;
+			text="atm13";
+			init="this allowdamage false; ";
+		};
+		class Item3918
+		{
+			position[]={12688.9,65.485802,12124.9};
+			azimut=360.68344;
+			id=1571;
+			side="EMPTY";
+			vehicle="tcg_atm";
+			leader=1;
+			skill=0.60000002;
+			text="atm14";
+			init="this allowdamage false; ";
+		};
+		class Item3919
+		{
+			position[]={12486.7,85,13893};
+			id=1571;
+			side="EMPTY";
+			vehicle="tcg_atm";
+			leader=1;
+			skill=0.60000002;
+			text="atm15";
+			init="this allowdamage false; ";
+		};
+		class Item3920
+		{
+			position[]={16266.4,37,13581.3};
+			azimut=180;
+			id=1571;
+			side="EMPTY";
+			vehicle="tcg_atm";
+			leader=1;
+			skill=0.60000002;
+			text="atm16";
+			init="this allowdamage false; ";
+		};
+		class Item3921
+		{
+			position[]={15452.6,37.5,16352.8};
+			azimut=180;
+			id=1571;
+			side="EMPTY";
+			vehicle="tcg_atm";
+			leader=1;
+			skill=0.60000002;
+			text="atm17";
+			init="this allowdamage false; ";
+		};
+		class Item3922
+		{
+			position[]={5471.3354,0.21688426,10125.676};
+			special="NONE";
+			id=4204;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsaver_port";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3923
+		{
+			position[]={5503.2881,1.2691565,10120.351};
+			special="NONE";
+			id=4204;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsave_port";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3924
+		{
+			position[]={5508.8618,2.7309797,10125.611};
+			azimut=89.750504;
+			id=4205;
+			side="EMPTY";
+			vehicle="Notebook";
+			skill=0.60000002;
+			text="vsave_port_1";
+			init="this allowdamage false;this attachto [vsave_port, [0,0,1]];";
+		};
+		class Item3925
+		{
+			position[]={10820.877,0.34270388,15942.38};
+			special="NONE";
+			id=4204;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsaver_port2";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3926
+		{
+			position[]={10835.893,3.764878,15945.597};
+			special="NONE";
+			id=4204;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsave_port2";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3927
+		{
+			position[]={10841.219,4.9565878,15951.497};
+			azimut=89.750504;
+			id=4205;
+			side="EMPTY";
+			vehicle="Notebook";
+			skill=0.60000002;
+			text="vsave_port2_1";
+			init="this allowdamage false;this attachto [vsave_port2, [0,0,1]];";
+		};
+		class Item3928
+		{
+			position[]={15406.963,1.7640848,10377.719};
+			special="NONE";
+			id=4204;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsave_port3";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3929
+		{
+			position[]={15412.322,1.1893507,10383.368};
+			azimut=89.750504;
+			id=4205;
+			side="EMPTY";
+			vehicle="Notebook";
+			skill=0.60000002;
+			text="vsave_port3_1";
+			init="this allowdamage false;this attachto [vsave_port3, [0,0,1]];";
+		};
+		class Item3930
+		{
+			position[]={10213.3,76.648598,18592.199};
+			special="NONE";
+			id=4206;
+			side="EMPTY";
+			vehicle="Misc_cargo_cont_tiny";
+			skill=0.60000002;
+			text="vsave_air";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
+		};
+		class Item3931
+		{
+			position[]={10219.3,76.648598,18599.199};
+			azimut=89.750504;
+			id=4207;
+			side="EMPTY";
+			vehicle="Notebook";
+			skill=0.60000002;
+			text="vsave_air_1";
+			init="this allowdamage false;this attachto [vsave_air, [0,0,1]];";
+		};
 	};
 	class Markers
 	{
-		items=422;
+		items=431;
 		class Item0
 		{
 			position[]={14942.911,14.993011,9741.7178};
@@ -47193,12 +47362,12 @@ class Mission
 		{
 			position[]={16417.709,44.942032,10032.403};
 			name="practice_1";
-			text="Police VIP Shop";
+			text="Police Shop";
 			type="mil_dot";
 			colorName="ColorBlack";
 			a=0.80000001;
 			b=0.80000001;
-			angle=-89.610504;
+			angle=-89.610497;
 		};
 		class Item373
 		{
@@ -47610,10 +47779,86 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
+		class Item422
+		{
+			position[]={13989.1,59.445801,12216.4};
+			name="atm13marker";
+			text="ATM";
+			type="mil_box";
+			colorName="ColorGreen";
+		};
+		class Item423
+		{
+			position[]={12688.9,65.485802,12124.9};
+			name="atm14marker";
+			text="ATM";
+			type="mil_box";
+			colorName="ColorGreen";
+		};
+		class Item424
+		{
+			position[]={12486.7,83.599098,13893};
+			name="atm15marker";
+			text="ATM";
+			type="mil_box";
+			colorName="ColorGreen";
+		};
+		class Item425
+		{
+			position[]={16266.4,37,13581.3};
+			name="atm16marker";
+			text="ATM";
+			type="mil_box";
+			colorName="ColorGreen";
+		};
+		class Item426
+		{
+			position[]={15452.6,37.5,16352.8};
+			name="atm17marker";
+			text="ATM";
+			type="mil_box";
+			colorName="ColorGreen";
+		};
+		class Item427
+		{
+			position[]={5503.4702,1.2973,10119.9};
+			name="port1";
+			text="Port de bateaux";
+			type="hd_dot";
+			colorName="ColorWhite";
+			angle=-180.244;
+		};
+		class Item428
+		{
+			position[]={15406.582,3.5550945,10362.745};
+			name="port2";
+			text="Port de bateaux";
+			type="hd_dot";
+			colorName="ColorWhite";
+			angle=-180.244;
+		};
+		class Item429
+		{
+			position[]={10844.065,5.3499861,15956.814};
+			name="port3";
+			text="Port de bateaux";
+			type="hd_dot";
+			colorName="ColorWhite";
+			angle=-180.244;
+		};
+		class Item430
+		{
+			position[]={10206.848,76.251953,18587.199};
+			name="hangar_save_marker";
+			text="Hangar civil";
+			type="hd_dot";
+			colorName="ColorWhite";
+			angle=-180.244;
+		};
 	};
 	class Sensors
 	{
-		items=37;
+		items=36;
 		class Item0
 		{
 			position[]={30785.387,0.38009852,23647.061};
@@ -48088,23 +48333,6 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={16423.432,44.942032,10043.474};
-			a=20;
-			b=20;
-			angle=0.47232136;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="DONATOR1_1_1";
-			expCond="this && vehicle player in thislist && !((getPlayerUID vehicle player) in vipdonators) && !((getPlayerUID vehicle player) in adminlevel4) && (getPos vehicle player select 2) < 10;";
-			expActiv="vehicle player setDir 225;vehicle player setVelocity [0, 0, 0]; vehicle player setpos (getmarkerpos ""getoutcop""); hint ""Donate >$10 for VIP access!"";";
-			class Effects
-			{
-			};
-		};
-		class Item35
-		{
 			position[]={14280.053,69.844215,11286.675};
 			a=40;
 			b=25;
@@ -48121,7 +48349,7 @@ class Mission
 			{
 			};
 		};
-		class Item36
+		class Item35
 		{
 			position[]={14281.519,69.849213,11285.796};
 			a=40;

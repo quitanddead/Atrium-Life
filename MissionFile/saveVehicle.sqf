@@ -4,7 +4,7 @@ _ArryLength = count _saveVehiclesList;
 
 if(_ArryLength >= 5) then {
 
-player groupChat "You can not save more than 3 vehicles, to get more please remove a vehicle at the retrieve vehicle box...";
+player groupChat "You can not save more than 5 vehicles, to get more please remove a vehicle at the retrieve vehicle box...";
 
 } else {
 

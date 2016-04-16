@@ -926,7 +926,6 @@ _tds = [
 "rescue",
 "Laddertruck",
 "il_kw_tanker",
-"suburban_fd",
 "il_silverado_pd",
 "tcg_suburban_FD",
 "il_ambulance",

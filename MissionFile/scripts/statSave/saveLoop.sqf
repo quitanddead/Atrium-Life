@@ -17,6 +17,8 @@ while {true} do
 		[getPlayerUID player, getPlayerUID player, "LicensesWest", INV_LizenzOwner] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "InventoryWest", INV_InventarArray] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "savedVehiclesCop", INV_SavedVehLandCop] call fn_SaveToServer;
+		[getPlayerUID player, getPlayerUID player, "savedVehiclesBoatCop", INV_SavedVehLand] call fn_SaveToServer;
+		[getPlayerUID player, getPlayerUID player, "savedAircraftCop", INV_SavedVehicleAir] call fn_SaveToServer;
 	};
 	if(playerSide == resistance) then
 	{
@@ -32,6 +34,7 @@ while {true} do
 		[getPlayerUID player, getPlayerUID player, "LicensesCiv", INV_LizenzOwner] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "InventoryCiv", INV_InventarArray] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "savedVehiclesCiv", INV_SavedVehLand] call fn_SaveToServer;
+		[getPlayerUID player, getPlayerUID player, "savedVehiclesBoatCiv", INV_SavedVehWater] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "savedAircraftCiv", INV_SavedVehicleAir] call fn_SaveToServer;
 	    [getPlayerUID player, getPlayerUID player, "privateStorageCiv", private_storage] call fn_SaveToServer;
 	    [getPlayerUID player, getPlayerUID player, "MaxWeight", INV_Tragfaehigkeit] call fn_SaveToServer;

@@ -18,6 +18,8 @@ _loadFromDBClient =
 		if(_varName == 'LicensesWest') then {INV_LizenzOwner = _varValue;};
 		if(_varName == 'InventoryWest') then {INV_InventarArray = _varValue;};
 		if(_varName == 'savedVehiclesCop') then {INV_SavedVehLandCop = _varValue;};
+		if(_varName == 'savedVehiclesBoatCop') then {INV_SavedVehWater = _varValue;};
+		if(_varName == 'savedAircraftCop') then {INV_SavedVehicleAir = _varValue;};
 		};
 	if(playerSide == civilian) then
 	{
@@ -26,6 +28,7 @@ _loadFromDBClient =
 		if(_varName == 'LicensesCiv') then {INV_LizenzOwner = _varValue;};
 		if(_varName == 'InventoryCiv') then {INV_InventarArray = _varValue;};
 		if(_varName == 'savedVehiclesCiv') then {INV_SavedVehLand = _varValue;};
+		if(_varName == 'savedVehiclesBoatCiv') then {INV_SavedVehWater = _varValue;};
 		if(_varName == 'savedAircraftCiv') then {INV_SavedVehicleAir = _varValue;};
 	    if(_varName == 'privateStorageCiv') then {private_storage = _varValue;};
 	};
