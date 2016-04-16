@@ -4,11 +4,11 @@ sleep 5;
 hint "Chargement 0%";
 //player groupChat "Loading";
 //Requests info from server in order to download stats
-[getPlayerUID player, getPlayerUID player, "moneyPlayer", "NUMBER"] call sendToServer;
+[getPlayerUID player, getPlayerUID player, "moneyPlayer", "SCALAR"] call sendToServer;
 sleep 2;
 hint "Chargement 20%";
 //player groupChat "Loading. .";
-[getPlayerUID player, getPlayerUID player, "moneyAccount", "NUMBER"] call sendToServer;
+[getPlayerUID player, getPlayerUID player, "moneyAccount", "SCALAR"] call sendToServer;
 sleep 2;
 hint "Chargement 40%";
 //player groupChat "Loading. . .";
@@ -45,7 +45,7 @@ if(playerSide == civilian) then
 	[getPlayerUID player, getPlayerUID player, "savedVehiclesBoatCiv", "ARRAY"] call sendToServer;
 	[getPlayerUID player, getPlayerUID player, "savedAircraftCiv", "ARRAY"] call sendToServer;
     [getPlayerUID player, getPlayerUID player, "privateStorageCiv", "ARRAY"] call sendToServer;
-    [getPlayerUID player, getPlayerUID player, "MaxWeight", "NUMBER"] call sendToServer;
+    [getPlayerUID player, getPlayerUID player, "MaxWeight", "SCALAR"] call sendToServer;
 };
 sleep 2;
 hint "Chargement 100%";

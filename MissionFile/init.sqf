@@ -66,7 +66,7 @@ if(!dedicatedserver) then
 if(isServer) then
 {
 
-	call compile preProcessFile "\inidb\init.sqf";
+	call compile preProcessFile "\inidbi\init.sqf";
 	execVM "Scripts\statSave\serverGather.sqf";
 };
 if(!isDedicated) then
