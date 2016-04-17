@@ -523,13 +523,13 @@ INV_ItemFabriken =
 [igunbox,"factory3","General Factory",igunbox,dummyobj,_itemfactory,150000,"Fabrikablage3", "itemqueue"],
 //[wfgunbox,"factory4","Weapon Factory",wfgunbox,dummyobj,_weaponfactory,600000,"Fabrikablage4", "weaponqueue"],
 [lilcuba,"factory5","Lil Cuba Gun Factory",lilcuba,dummyobj,_lilcubafactory,500000,"Fabrikablage5", "tvehiclequeue"],
-//[tairshop,"factory6","Terrorist Vehicle Factory",dummyobj,tairspawn,_tairfactory,200000,"Fabrikablage6", "tavehiclequeue"], //NOT ON MAP
+[tairshop,"factory6","Terrorist Vehicle Factory",dummyobj,tairspawn,_tairfactory,200000,"Fabrikablage6", "tavehiclequeue"],
 [alcoholfactory,"factory7","Alcohol Factory",dummyobj,dummyobj,_alcoholfactory,10000,"Fabrikablage7", "alcoholfactoryqueue"],
 [ressourcenfabrik_1,"factory9","ResourceFactory",dummyobj,dummyobj,_resourcefactory,10000,"Fabrikablage9","resourcequeue"],
 [bmgunbox,"factory8","Weapons Factory",bmgunbox,dummyobj,_weaponfactory,250000,"Fabrikablage8", "weaponqueue"],
 //[bmgunbox,"factory8","Weapons Factory",bmgunbox,bmcar,_terrorfactoryitems,1000000,"Fabrikablage8", "terrorfactoryitemsqueue"],
 [resbox2,"factory10","ResourceweaponsFactory",resbox2,dummyobj,_resourceweaponsfactory,100000,"Fabrikablage10","resourceweapqueue"],
-//[helifac,"factory12","Tom's Air Factory",dummyobj,hfacspawn,_airvehiclefactory,200000,"Fabrikablage12", "airvehiclequeue"]
+[helifac,"factory12","Tom's Air Factory",dummyobj,hfacspawn,_airvehiclefactory,200000,"Fabrikablage12", "airvehiclequeue"]
 ];
 
 INV_Fabrikowner = [];
