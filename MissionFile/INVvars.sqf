@@ -11,7 +11,7 @@ INV_VehicleArray        = [];
 INV_ServerVclArray      = [];
 INV_SaveObjArray        = false;
 INV_shortcuts           = true;
-INV_SperrenVerbotArray  = [[copbase1, 250],[sperrenverbot3, 30 ]];
+//INV_SperrenVerbotArray  = [[copbase1, 250],[sperrenverbot3, 30 ]]; //Throwing errors, seems unused
 INV_JIP = true; publicVariable "INV_JIP";
 _handler = [] execVM "INVfunctions.sqf";
 waitUntil {scriptDone _handler};

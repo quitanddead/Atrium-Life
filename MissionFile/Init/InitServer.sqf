@@ -8,6 +8,7 @@
 [] execVM "servermissionfile3\governmentconvoy.sqf";
 [] execVM "servermissionfile3\admins.sqf";
 [] execVM "servermissionfile3\pmc.sqf";
+[] execVM "servermissionfile3\cops.sqf";
 [] execVM "servermissionfile3\donators.sqf";
 [] execVM "servermissionfile3\winner.sqf";
 //[] execVM "servermissionfile\terrorist.sqf";

@@ -1,3 +1,9 @@
+_uid = getPlayerUID  player;
+if(playerSide == west && !(_uid in copsarray)) then {
+	player globalChat "Vous n'êtes pas whitelist pour être policier";
+	call compile "failMission ""loser"";";
+};
+
 waitUntil {(alive player)};
 
 civstatsdone = false;

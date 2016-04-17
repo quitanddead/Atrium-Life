@@ -1093,7 +1093,7 @@ INV_AlleWaffenObjekte = [
 //============================START OF LEGAL ITEMS=============================
 
 //CORN
-["corn",["Item", "food"],["corn", "Corn"],[1500, 1500], [2, ""], [true, true, true,true,"food.sqf"],localize "Corn",localize "Sell your corn at Sell Resources", [["Unprocessed_Corn", 10]]],
+["corn",["Item", "food"],["corn", "Corn"],[1500, 1500], [2, ""], [true, true, true,true,"food.sqf"],localize "Corn",localize "STRS_sell_corn", [["Unprocessed_Corn", 10]]],
 //CORND SEED AT LINE 532
 
 //OIL
@@ -1181,9 +1181,9 @@ INV_AlleWaffenObjekte = [
 ["gewehr",["Item", "weapon"], ["gewehr", "Rifle"],[0, 0],[0, ""],[false, false,true, true, "holsterscript.sqf"], localize "STRS_inv_item_waffe",localize "STRS_inv_item_waffe_info", []],
 ["waffentasche",["Item", "misc"],["waffentasche", "Weaponbag"],[1000, 750], [0.5, "", ""], [true, true, true,false,"weaponbag.sqf"],localize "STRS_inv_item_waffentascbe",localize "STRS_inv_item_waffentascbe_info", [["plastic", 1]]],
 ["bankversicherung", ["Item", "misc"], ["bankversicherung", "Bank insurance"],[2000, 1500], [0, ""],[true,true,true, false, "nouse.sqf"], localize "STRS_item_versicherung", localize "STRS_item_versicherung_info",[]],
-["dirtymoney", ["Item", "geld"], ["dirtymoney", "Dirty Money"],[.5, .5], [0, ""],[true,true,true, false, "nouse.sqf"], localize "Dirty Money", localize "Get To The Club And Exchange The Money",[]],
+["dirtymoney", ["Item", "geld"], ["dirtymoney", "Dirty Money"],[.5, .5], [0, ""],[true,true,true, false, "nouse.sqf"], localize "STRS_dirty_money", localize "STRS_club_exchange_money",[]],
 ["handy",["Item", "Shop"], ["handy", "Cell Phone"], [750, 750], [0, ""],[false,false, false,false,"handy.sqf"], localize "STRS_inv_item_handy",localize "STRS_inv_item_handy_info", [["plastic", 2],["ebauteile", 2]]],
-["lticket",["Item", "food"],["lticket", "Scratch Ticket"],[2500, 2500], [0, ""], [true, true, true,true,"lottery.sqf"],localize "Lottery",localize "Sell your corn at Sell Resources", [["Unprocessed_Corn", 10]]],
+["lticket",["Item", "food"],["lticket", "Scratch Ticket"],[2500, 2500], [0, ""], [true, true, true,true,"lottery.sqf"],localize "STRS_lottery",localize "Sell your corn at Sell Resources", [["Unprocessed_Corn", 10]]],
 
 //============================END OF IMPORTANT ITEMS (DO NOT DELTE)=============================
 

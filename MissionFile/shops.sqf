@@ -1968,7 +1968,7 @@ INV_ItemShops = [
 [shop2,"Food Shop",dummyobj,dummyobj,_is,_is,true],
 [shop4,"Food Shop",dummyobj,dummyobj,_is,_is,true],
 
-[pub0,"Pub",dummyobj,dummyobj,_pub,_pub,true],
+//[pub0,"Pub",dummyobj,dummyobj,_pub,_pub,true], //NOT ON MAP
 [pub1,"Pub",dummyobj,dummyobj,_pub,_pub,true],
 [pub2,"Pub",dummyobj,dummyobj,_pub,_pub,true],
 [pub3,"Pub",dummyobj,dummyobj,_pub,_pub,true],
@@ -2011,7 +2011,7 @@ INV_ItemShops = [
 [airshop,"Airplane Shop",dummyobj,asairspawn,_as,_as,true],
 [airshop2,"Chopper and Jet Shop",dummyobj,asairspawn,_assa,_assa,true],
 [airshop3,"Commercial Air Shop",dummyobj,asairspawn1,_asc,_asc,true],
-[airshop4,"Chopper and Jet Shop",dummyobj,asairspawn2,_assa,_assa,true],
+//[airshop4,"Chopper and Jet Shop",dummyobj,asairspawn2,_assa,_assa,true],
 
 [scubashop, "Jetski Shop",dummyobj,boatspawn5,_sb,_sb,true],
 [boatshop2, "Boat Shop",dummyobj,boatspawn2,_bs,_bs,true],

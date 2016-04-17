@@ -28,8 +28,11 @@ for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do
 	{
 
 	_flag   = ((INV_ItemShops select _i) select 0);
-
-	shopusearray = shopusearray + [_flag];
+	
+	if(!isNil {_flag}) then
+	{
+		shopusearray = shopusearray + [_flag];
+	}
 
 	};
 
@@ -76,6 +79,10 @@ for [{_i = 0}, {_i < (count INV_FarmItemArray)}, {_i = _i + 1}] do
 for [{_i=0}, {_i < (count INV_ItemFabriken)}, {_i=_i+1}] do {
 _flag   = (INV_ItemFabriken select _i) select 0;
 _name   = (INV_ItemFabriken select _i) select 1;
+if(isNil {_flag}) then
+{
+	diag_log exitWith {);
+};
 _cost   = (INV_ItemFabriken select _i) select 6;
 _ablage = (INV_ItemFabriken select _i) select 7;
 _owner   = false; if (_name in INV_Fabrikowner) then {_owner = true};
@@ -111,6 +118,10 @@ _flag        = ((INV_Lizenzen select _i) select 1);
 _licensename = ((INV_Lizenzen select _i) select 2);
 _cost        = ((INV_Lizenzen select _i) select 3);
 _added       = _Arr2 select _i;
+		
+if(isNil {_flag}){
+	exitWith {);
+};
 
 if ((player distance _flag <= 5) and !(_license call INV_HasLicense) and (_added == 0)) then
 

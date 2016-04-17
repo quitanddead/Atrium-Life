@@ -59,8 +59,3 @@ sendToServer = compile _sendToServer;
 
 statFunctionsLoaded = 1;
 
-if(ssDebug == 1) then
-{
-
-};
-
