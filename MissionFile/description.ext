@@ -10,7 +10,7 @@ respawn       = 3;
 respawnDelay  = 30;
 disabledAI    = 1;
 enableItemsDropping = 0;
-loadScreen = "loading.paa";
+loadScreen = "loading.jpg";
 onMinimapScript[] = {"BIS_fnc_customGPS_Spawn"};
 class Header {gameType   = Team; minPlayers = 1; maxPlayers = 77;};
 

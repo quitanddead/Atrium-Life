@@ -1,7 +1,7 @@
 if (isServer) exitWith {};
 if ((getplayeruid player) in adminlevel1) exitwith {};
 
-hintc "http://atrium.lesboby.ca/";
+hintc "http://atrium-life.com/";
 
 
 sleep 60;

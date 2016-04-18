@@ -199,7 +199,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Island Life Taviana - Atrium";
-		briefingDescription="atrium.lesboby.ca";
+		briefingDescription="atrium-life.com";
 		resistanceEast=1;
 		startWeather=0;
 		forecastWeather=0;
