@@ -55,7 +55,6 @@ sendToServer = compile _sendToServer;
 //===========================================================================
 "accountToClient" addPublicVariableEventHandler
 {
-	player groupchat format["%1", _this];
 	(_this select 1) spawn loadFromDBClient;
 };
 //===========================================================================
