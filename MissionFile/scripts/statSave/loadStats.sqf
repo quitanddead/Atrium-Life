@@ -5,14 +5,14 @@ _loadFromDBClient =
 	_uid = _array select 0;
 	if((getPlayerUID player) != _uid) exitWith {};
 	_varName = _array select 1;
-	_varValue = _array select 2;
+	_varValue = (_array select 2) select 0;
+	_success = (_array select 2) select 1;
 	if(isNil '_varValue') exitWith {};
-	if(_varName == 'moneyPlayer') then {Geld = _varValue;};
-	if(_varName == 'moneyAccount') then {Kontostand  = _varValue;};
 
 
 	if(playerSide == west) then
 	{
+		if(_varName == 'moneyAccountCop' && _success) then {Kontostand  = _varValue;};
 		if(_varName == 'WeaponsPlayerWest') then {{player addWeapon _x} forEach _varValue;};
 		if(_varName == 'MagazinesPlayerWest') then {{player addMagazine _x} forEach _varValue;};
 		if(_varName == 'LicensesWest') then {INV_LizenzOwner = _varValue;};
@@ -23,6 +23,7 @@ _loadFromDBClient =
 		};
 	if(playerSide == civilian) then
 	{
+		if(_varName == 'moneyAccountCiv' && _success) then {Kontostand  = _varValue;};
 		if(_varName == 'WeaponsPlayerCiv') then {{player addWeapon _x} forEach _varValue;};
 		if(_varName == 'MagazinesPlayerCiv') then {{player addMagazine _x} forEach _varValue;};
 		if(_varName == 'LicensesCiv') then {INV_LizenzOwner = _varValue;};
@@ -34,6 +35,7 @@ _loadFromDBClient =
 	};
 	if(playerSide == resistance) then
 	{
+		if(_varName == 'moneyAccountRes' && _success) then {Kontostand  = _varValue;};
 		if(_varName == 'WeaponsPlayerRes') then {{player addWeapon _x} forEach _varValue;};
 		if(_varName == 'MagazinesPlayerRes') then {{player addMagazine _x} forEach _varValue;};
 		if(_varName == 'LicensesRes') then {INV_LizenzOwner = _varValue;};
@@ -53,6 +55,7 @@ sendToServer = compile _sendToServer;
 //===========================================================================
 "accountToClient" addPublicVariableEventHandler
 {
+	player groupchat format["%1", _this];
 	(_this select 1) spawn loadFromDBClient;
 };
 //===========================================================================

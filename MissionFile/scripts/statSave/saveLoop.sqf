@@ -4,7 +4,6 @@ while {true} do
 	sleep 120;
 
 	[getPlayerUID player, getPlayerUID player, "Account Name", name player] call fn_SaveToServer;
-    [getPlayerUID player, getPlayerUID player, "moneyAccount", Kontostand] call fn_SaveToServer;
 
 	_pistol = (saveWeaponPistol select 0);
 	if(isNil "_pistol") then {_pistol = "";};
@@ -12,6 +11,7 @@ while {true} do
 	if(isNil "_rifle") then {_rifle = "";};
 	if(playerSide == west) then
 	{
+		[getPlayerUID player, getPlayerUID player, "moneyAccountCop", Kontostand] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "WeaponsPlayerWest", (weapons player) + [_pistol] + [_rifle]] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "MagazinesPlayerWest", magazines player] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "LicensesWest", INV_LizenzOwner] call fn_SaveToServer;
@@ -22,6 +22,7 @@ while {true} do
 	};
 	if(playerSide == resistance) then
 	{
+		[getPlayerUID player, getPlayerUID player, "moneyAccountRes", Kontostand] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "WeaponsPlayerRes", (weapons player) + [_pistol] + [_rifle]] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "MagazinesPlayerRes", magazines player] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "LicensesRes", INV_LizenzOwner] call fn_SaveToServer;
@@ -29,6 +30,7 @@ while {true} do
 	};
 	if(playerSide == civilian) then
 	{
+		[getPlayerUID player, getPlayerUID player, "moneyAccountCiv", Kontostand] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "WeaponsPlayerCiv", (weapons player) + [_pistol] + [_rifle]] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "MagazinesPlayerCiv", magazines player] call fn_SaveToServer;
 		[getPlayerUID player, getPlayerUID player, "LicensesCiv", INV_LizenzOwner] call fn_SaveToServer;
