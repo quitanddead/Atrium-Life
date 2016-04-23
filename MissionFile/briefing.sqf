@@ -12,11 +12,7 @@ player createDiaryRecord ["credits",
 "Island Life Mission Credits",
 "
 <br/>
-HAVE A GREAT GAME !<br/>
-br/>
-<br/>
-<br/>
-Change this text in briefing.sqf<br/>
+HAVE A GREAT GAME !
 "
 ]
 ];
@@ -31,21 +27,13 @@ player createDiaryRecord ["bugs",
 <br/>
 Island Life<br/>
 
-siteweb.com<br/>
+atrium-life.com<br/>
 <br/>
-<br/>
-Registering gives you access to our discussion forums<br/>
-
-siteweb.com
 <br/>
 <br/>
 Please report any bugs with the mission at<br/>
 
-siteweb.com
-<br/>
-<br/>
-Join your fellow players on Teamspeak 3 at<br/>
-Address teamspeak.combr/>
+atrium-life.com
 "
 ]
 ];
@@ -62,12 +50,12 @@ text<br/>
 <br/>
 A complete list of enforced server rules can be found online at<br/>
 
-siteweb.com<br/>
+atrium-life.com<br/>
 <br/>
 There are no excuses for not reading these rules, and all rule-breakers will be dealt with accordingly--Administrators will always have final say<br/>
 <br/>
 
-Make sure you read all the rules at siteweb.com<br/>
+Make sure you read all the rules at atrium-life.com<br/>
 "
 ]
 ];
@@ -265,14 +253,7 @@ and more. you have more options if you use the copmenu whilst in a vehicle.
 
 player createDiaryRecord ["changelog",
 [
-"IL Changelog",
-"<br/>
-
-
-
-
-
---TCG <br/>
+0.9 Beta <br/>
 <br/>
 
 "

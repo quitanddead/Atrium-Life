@@ -5,9 +5,13 @@ waituntil {alive player};
 //player removeweapon "ItemGPS";
 removeAllWeapons player;
 execVM "briefing.sqf";
-if (isciv) then {player addweapon "ItemGPS";};
+if (isciv) then {
+	player addweapon "ItemGPS";
+	[] execVM "actions\civactions.sqf";
+};
 if (iscop) then
 {
+	[] execVM "actions\copactions.sqf";
 	if (count playerWeapons == 0 and count playermagazines == 0) then
 		{
 		{player addMagazine _x} forEach CopStartGear_Mags;

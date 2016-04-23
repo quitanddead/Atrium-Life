@@ -210,7 +210,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=288;
+		items=289;
 		class Item0
 		{
 			side="LOGIC";
@@ -6048,10 +6048,29 @@ class Mission
 				};
 			};
 		};
+		class Item288
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10812,0,15942.38};
+					special="NONE";
+					id=4206;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="vsaver_port2";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=3932;
+		items=3931;
 		class Item0
 		{
 			position[]={15321.742,35.599998,16100.798};
@@ -44116,17 +44135,6 @@ class Mission
 		};
 		class Item3925
 		{
-			position[]={10820.877,0.34270388,15942.38};
-			special="NONE";
-			id=4204;
-			side="EMPTY";
-			vehicle="Misc_cargo_cont_tiny";
-			skill=0.60000002;
-			text="vsaver_port2";
-			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
-		};
-		class Item3926
-		{
 			position[]={10835.893,3.764878,15945.597};
 			special="NONE";
 			id=4204;
@@ -44136,7 +44144,7 @@ class Mission
 			text="vsave_port2";
 			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
 		};
-		class Item3927
+		class Item3926
 		{
 			position[]={10841.219,4.9565878,15951.497};
 			azimut=89.750504;
@@ -44147,7 +44155,7 @@ class Mission
 			text="vsave_port2_1";
 			init="this allowdamage false;this attachto [vsave_port2, [0,0,1]];";
 		};
-		class Item3928
+		class Item3927
 		{
 			position[]={15406.963,1.7640848,10377.719};
 			special="NONE";
@@ -44158,7 +44166,7 @@ class Mission
 			text="vsave_port3";
 			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
 		};
-		class Item3929
+		class Item3928
 		{
 			position[]={15412.322,1.1893507,10383.368};
 			azimut=89.750504;
@@ -44169,7 +44177,7 @@ class Mission
 			text="vsave_port3_1";
 			init="this allowdamage false;this attachto [vsave_port3, [0,0,1]];";
 		};
-		class Item3930
+		class Item3929
 		{
 			position[]={10213.3,76.648598,18592.199};
 			special="NONE";
@@ -44180,7 +44188,7 @@ class Mission
 			text="vsave_air";
 			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-.5];";
 		};
-		class Item3931
+		class Item3930
 		{
 			position[]={10219.3,76.648598,18599.199};
 			azimut=89.750504;

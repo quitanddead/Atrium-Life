@@ -71,7 +71,6 @@ switch (PlayerTeam) do
     case "CIV":
 	{
 	if(!debug)then{["civintro"] execVM "introcam.sqf";};
-	[] execVM "actions\civactions.sqf";
 	["handy", 1] call INV_AddInvItem;
 	onKeyPress = compile preprocessFile "actions\CivonKeyPress.sqf";
 	waituntil {!(IsNull (findDisplay 46))};
@@ -81,7 +80,6 @@ switch (PlayerTeam) do
     case "WEST":
 	{
 	if(!debug)then{["copintro"] execVM "introcam.sqf";};
-	[] execVM "actions\copactions.sqf";
 	["handy", 1] call INV_AddInvItem;
 	onKeyPress = compile preprocessFile "actions\CoponKeyPress.sqf";
 	waituntil {!(IsNull (findDisplay 46))};

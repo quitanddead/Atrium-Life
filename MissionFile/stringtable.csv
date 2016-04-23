@@ -10,7 +10,7 @@ STRS_anfang_04,Interdit de rentrer dans quelqu'un en véhicule
 STRS_anfang_05_civ,Notre site web: atrium-life.com
 STRS_anfang_05_cop,Voir les réglements compltet sur le site : atrium-life.com
 STRS_anfang_cop_loadout,
-STRS_anfang_06, "guide de jeu, règles, Teamspeak Info, et changelog sur la carte onglets \ n \ nVeuillez respecter les règles du jeu et l'esprit du jeu \ n \ n Prenez du plaisir!"
+STRS_anfang_06, "guide de jeu, règles, et changelog sur la carte onglets \ n \ nVeuillez respecter les règles du jeu et l'esprit du jeu \ n \ n Prenez du plaisir!"
 STRS_check_civ_in_terrorbase, vous êtes entré dans le camp Terroriste.
 STRS_southChernarus_area, Vous n'avez pas de compétence dans ce domaine. Faites demi-tour!
 STRS_prohibited_area, Faites demi-tour !
@@ -101,7 +101,7 @@ STRS_civcam_notwanted, Vous regardez %1. Il n'est pas  recherché.,
 STRS_civcam_wanted, Vous regardez %1. Il est recherché.,
 STRS_deadcam_deadwait_civ,Vous êtes mort %1 fois et suicidé %5 fois vous devez attendre %2 seconde(s) pour réapparaître. Vous devez aussi attendre %4 seconde(s) de plus pour réapparaître (pour tous les joueurs que vous avez tué dans cette vie et lors d'un suicide.),
 STRS_deadcam_deadwait_cop,"Comme policier vous devez attendre 30 secondes pour réapparaître, plus 30 secondes par joueur que vous avez tué. \nVotre temps de réapparition pour ce tour est de %1 secondes. \nPour ne pas avoir un temps de réapparition trop long, taser ou arrêter les civils au lieu de les tuer",
-STRS_civmenu_stehlen_copzunah, vous ne pouvez pas voler quoi que ce soit quand un flic est proche.,
+STRS_civmenu_stehlen_copzunah, vous ne pouvez pas voler quoi que ce soit quand la police est proche.,
 STRS_civmenu_stehlen, Vous volé de l'argent à ce joueur! S'il vous plaît attendez cinq secondes pour obtenir l'argent.,
 STRS_civmenu_distance, Vous êtes trop loin du civil ou il est mort,
 STRS_civmenu_wantedbonus, C'était une personne recherchée. Vous obtenez alors un bonus de $%1,
@@ -130,7 +130,7 @@ STRS_civmenucheck_beendrugsearched, Vos drogues ont été retirés. Grosse V,
 STRS_civmenucheck_ticketrest, vous devez encore $%1 à la police,
 STRS_civmenucheck_ticketself, Vous avez payé une amende de $%1.,
 STRS_civmenucheck_youarehealed, vous avez été guéri par le policier quelle amour,
-STRS_civmenucheck_removeddrugs, Un flic a trouvé vos drogues et les a saisie.,
+STRS_civmenucheck_removeddrugs, Un policier a trouvé vos drogues et les a saisie.,
 STRS_civmenucheck_haddrugs,%1 avait pour une valeur $%2 de drogue!,
 STRS_civmenucheck_arrested_self, Vous avez été arrêté pour une durée de %1 Minutes. Après cela, vous serez téléporté sur zone. Vous pouvez monter à bord d'un hélicoptère pour vous échapper.,
 STRS_civmenucheck_arrested_global,%1 a été arrêté par %2 pour une durée de %3 minute(s),
@@ -972,7 +972,7 @@ STRS_need_pistol_license,Vous devez tout d'abord posséder votre Permis de pisto
 STRS_not_enough_money_riflelicense,Vous n'avez pas assez d'argent.,
 STRS_recieved_rifle_license,Vous devez possédé votre licence d'arme automatique,
 STRS_veh_pistol,Dégainez votre Pistolet,
-STRS_mafia_hosmes,Les gens dans la rue disent que les hommes en costumes noirs ont demandé où vous en êtes. Méfiez-vous des ravisseurs! Il est temps de faire profil bas ou contacter les flics!,
+STRS_mafia_hosmes,Les gens dans la rue disent que les hommes en costumes noirs ont demandé où vous en êtes. Méfiez-vous des ravisseurs! Il est temps de faire profil bas ou contacter les policiers!,
 STRS_mafia_died,"L'homme qui vous suit semble être mort, vous êtes bon, pour l'instant.",
 STRS_mafia_away,"Les hommes en costumes noirs ont abandonné leur recherche, bon travail!",
 STRS_inv_shopdialog_money,,
@@ -1008,7 +1008,7 @@ STRS_maincoprules,"IL FAUT TOUJOURS AVOIR 2 FOIS PLUS DE CIVILS QUE DE POLICIER
 -Le poste de Chef de la Police est pour le représentant des forces de l'ordre.
 
 \n
--Tous les policiers DOIVENT être sur TS!",
+-Tous les policiers DOIVENT être sur Discord!",
 STRS_inv_item_bupgrade_info,STRING MISSING,
 Corn,blé,
 STRS_sell_corn,Sell your corn at Sell Resources,
