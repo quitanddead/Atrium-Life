@@ -76,24 +76,6 @@ switch _key do
 	player action ["lightOff", _vcl];
 
 	};
-	//K key
-	case 37:
-
-	{
-		if(!INV_shortcuts)exitwith{};
-		hint format["Position:%1", getPosASL player];
-		_handled=true;
-
-	};
-	//B key
-	case 48:
-
-	{
-		if(!INV_shortcuts)exitwith{};
-		hint format["Position:%1", player distance carpark1];
-		_handled=true;
-
-	};
 	//4 key
 	case 5:
 

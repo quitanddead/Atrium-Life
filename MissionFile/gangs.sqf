@@ -236,9 +236,6 @@ while {isciv} do
 		_gangarea = gangareas select _c;
 		_control  = _gangarea getvariable "control";
 		
-		if(isNil {_control}){
-			exitWith {);
-		};
 
 		if(player distance _gangarea < 10 and (getpos _gangarea select 2) < 0 and _control == (call INV_mygang))then{_gangarea setpos [getpos _gangarea select 0, getpos _gangarea select 1, (getpos _gangarea select 2) + 0.1];};
 
